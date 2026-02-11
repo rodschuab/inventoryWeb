@@ -1,0 +1,157 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f8;
+  color: #111;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 18px;
+}
+
+.header {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title { margin: 0; font-size: 22px; }
+.subtitle { margin: 4px 0 0; color: #666; font-size: 13px; }
+
+.nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ✅ Abas com mesmo tamanho */
+.navBtn {
+  width: 150px;
+  text-align: center;
+
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navBtn.active {
+  background: #111;
+  border-color: #111;
+  color: white;
+}
+
+/* ✅ Evita o conteúdo mudar de tamanho quando troca de aba */
+.main {
+  margin-top: 14px;
+  min-height: calc(100vh - 220px);
+}
+
+.card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 14px;
+  align-items: center;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .grid2 { grid-template-columns: 1fr; }
+  .header { flex-direction: column; align-items: flex-start; }
+}
+
+.panel {
+  border: 1px solid #efefef;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+}
+
+h2 { margin: 0; }
+h3 { margin: 0 0 10px; font-size: 16px; }
+
+.label { display: block; font-size: 13px; color: #333; margin-top: 10px; }
+
+.input {
+  width: 100%;
+  padding: 10px 11px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  margin-top: 6px;
+}
+
+.input:focus { border-color: #111; }
+
+.row { margin-top: 12px; display: flex; gap: 8px; align-items: center; }
+
+.btn {
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #111;
+  color: white;
+  border-color: #111;
+}
+
+.btn.danger {
+  border-color: #c44;
+  color: #c44;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th, .table td {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table th { color: #333; font-weight: bold; }
+
+.msg {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #c44;
+}
+
+.footer {
+  margin-top: 12px;
+  color: #777;
+  font-size: 12px;
+  padding: 8px 2px;
+}
