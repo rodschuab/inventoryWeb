@@ -44,7 +44,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <span>API: http://localhost:8080</span>
+        <span>InventoryAPI: http://localhost:8080</span>
       </footer>
     </div>
   );
