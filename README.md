@@ -51,6 +51,9 @@ npm install
 
 ---
 
-## Como executar o projeto
+## Como executar
+
 - Na raiz do projeto: npm run dev
 - Aplicação disponivel: http://localhost:5173
+
+--- 
