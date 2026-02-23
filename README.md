@@ -12,12 +12,12 @@ Permite:
 
 - CRUD de Products
 - CRUD de Raw Materials
-- CRUD da associação Product ↔ Raw Material (BOM)
+- CRUD da associação Product + Raw Material 
 - Consulta de produtos que podem ser produzidos com base no estoque
 
 ---
 
-## 🚀 Tecnologias
+## Tecnologias
 
 - React
 - Axios
@@ -26,28 +26,30 @@ Permite:
 
 ---
 
-## 📋 Requisitos atendidos
+##  Requisitos atendidos
 
-- RF005 – CRUD de produtos no front-end ✅  
-- RF006 – CRUD de matérias-primas no front-end ✅  
-- RF007 – CRUD da associação dentro do cadastro de produtos (BOM) ✅  
-- RF008 – Listagem de produtos e quantidades possíveis de produção ✅  
+- RF005 – CRUD de produtos no front-end   
+- RF006 – CRUD de matérias-primas no front-end  
+- RF007 – CRUD da associação dentro do cadastro de produtos  
+- RF008 – Listagem de produtos e quantidades possíveis de produção   
 
 ---
 
-## ⚙️ Pré-requisitos
+##  Pré-requisitos
 
 - Node.js 18+
 - npm
 
 ---
 
-## 📦 Instalação
+##  Instalação
 
 Na raiz do projeto:
 
 ```bash
 npm install
+
+---
 
 ## Como executar o projeto
 - Na raiz do projeto: npm run dev
